@@ -1,0 +1,1360 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>挠脚心tk捆绑网站-情景体验与内容导航</title>
+<meta name="description" content="挠脚心tk捆绑网站，整理TK挠痒与捆绑情景的内容导航、体验指南、安全规则与社区讨论，涵盖绳缚基础、挠脚心道具、场景沟通与常见疑问，帮助新手快速了解这一小众兴趣的边界与玩法。">
+<meta name="keywords" content="挠脚心tk捆绑网站">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4858'/%3E%3Cpath d='M20 44c4-10 8-18 12-24 2 8 2 16 0 24 5-3 9-3 12 0' stroke='%23e0b26a' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='22' cy='22' r='3' fill='%23e0b26a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#22313a;
+  --ink-soft:#4a5b66;
+  --ink-faint:#71828c;
+  --paper:#f6f2ea;
+  --paper-alt:#efe8db;
+  --card:#fffdf8;
+  --line:#ddd3c2;
+  --line-strong:#c4b6a0;
+  --primary:#2f4858;
+  --primary-deep:#21333f;
+  --accent:#b8642a;
+  --accent-soft:#f0dcc4;
+  --gold:#c8963e;
+  --ok:#4a7c59;
+  --warn:#a4503b;
+  --r-sm:6px;
+  --r-md:12px;
+  --r-lg:20px;
+  --sp-1:6px;
+  --sp-2:12px;
+  --sp-3:18px;
+  --sp-4:28px;
+  --sp-5:44px;
+  --sp-6:68px;
+  --shadow-1:0 1px 2px rgba(34,49,58,.08),0 4px 14px rgba(34,49,58,.06);
+  --shadow-2:0 6px 24px rgba(34,49,58,.12);
+  --font-main:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"STSong",serif;
+  --font-ui:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --sticky-offset:112px;
+  --w-max:1180px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-main);
+  line-height:1.78;
+  font-size:16.5px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--primary);text-decoration:none;}
+a:hover{color:var(--accent);}
+h1,h2,h3,h4{line-height:1.32;margin:0 0 var(--sp-2);font-weight:700;color:var(--primary-deep);}
+p{margin:0 0 var(--sp-2);}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.25em;}
+li{margin-bottom:4px;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.sticky-wrap{
+  position:sticky;
+  top:0;
+  z-index:60;
+  box-shadow:0 1px 0 var(--line-strong),0 6px 18px rgba(34,49,58,.08);
+}
+.announce{
+  background:var(--primary-deep);
+  color:#f0e6d4;
+  font-family:var(--font-ui);
+  font-size:13.5px;
+  letter-spacing:.02em;
+}
+.announce-in{
+  max-width:var(--w-max);
+  margin:0 auto;
+  padding:7px var(--sp-3);
+  display:flex;
+  gap:var(--sp-2);
+  align-items:center;
+  flex-wrap:wrap;
+}
+.announce strong{color:var(--gold);font-weight:700;letter-spacing:.04em;}
+.announce .sep{opacity:.4;}
+.announce a{color:#f0e6d4;text-decoration:underline;text-underline-offset:3px;}
+.announce a:hover{color:var(--gold);}
+.site-head{
+  background:rgba(246,242,234,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.head-in{
+  max-width:var(--w-max);
+  margin:0 auto;
+  padding:10px var(--sp-3);
+  display:flex;
+  align-items:center;
+  gap:var(--sp-3);
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex:0 0 auto;
+}
+.brand-mark{width:40px;height:40px;flex:0 0 auto;}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;}
+.brand-name{font-family:var(--font-ui);font-size:16px;font-weight:800;color:var(--primary-deep);letter-spacing:.03em;}
+.brand-sub{font-family:var(--font-ui);font-size:10.5px;color:var(--ink-faint);letter-spacing:.22em;}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:2px;flex-wrap:wrap;}
+.main-nav a{
+  font-family:var(--font-ui);
+  font-size:14px;
+  color:var(--ink-soft);
+  padding:8px 10px;
+  border-radius:var(--r-sm);
+  white-space:nowrap;
+}
+.main-nav a:hover{background:var(--paper-alt);color:var(--primary-deep);}
+.head-tools{display:flex;align-items:center;gap:var(--sp-1);}
+.btn{
+  font-family:var(--font-ui);
+  font-size:14px;
+  border:1px solid var(--line-strong);
+  background:var(--card);
+  color:var(--primary-deep);
+  padding:8px 14px;
+  border-radius:var(--r-sm);
+  cursor:pointer;
+  transition:transform .16s ease,background .16s ease;
+  display:inline-block;
+}
+.btn:hover{background:var(--paper-alt);transform:translateY(-2px);}
+.btn-primary{background:var(--primary);border-color:var(--primary);color:#f7f1e4;}
+.btn-primary:hover{background:var(--primary-deep);color:#fff;}
+.menu-toggle{display:none;}
+.search-box{position:relative;display:flex;align-items:center;gap:0;}
+.search-box input{
+  font-family:var(--font-ui);
+  font-size:13.5px;
+  border:1px solid var(--line-strong);
+  background:var(--card);
+  border-radius:var(--r-sm) 0 0 var(--r-sm);
+  padding:8px 10px;
+  width:128px;
+  color:var(--ink);
+}
+.search-box input::placeholder{color:var(--ink-faint);}
+.search-box button{
+  border-radius:0 var(--r-sm) var(--r-sm) 0;
+  border-left:0;
+  padding:8px 12px;
+}
+.search-feedback{
+  position:absolute;
+  top:calc(100% + 6px);
+  right:0;
+  width:280px;
+  background:var(--card);
+  border:1px solid var(--line-strong);
+  border-radius:var(--r-md);
+  box-shadow:var(--shadow-2);
+  padding:10px 14px;
+  font-family:var(--font-ui);
+  font-size:13px;
+  color:var(--ink-soft);
+  display:none;
+  z-index:80;
+}
+.search-feedback.show{display:block;}
+.search-feedback ul{margin:6px 0 0;padding-left:1.1em;}
+
+/* ---------- 通用布局 ---------- */
+.wrap{max-width:var(--w-max);margin:0 auto;padding:0 var(--sp-3);}
+.section{padding:var(--sp-5) 0;}
+.section-h2{
+  display:flex;
+  align-items:baseline;
+  gap:var(--sp-2);
+  flex-wrap:wrap;
+  border-bottom:2px solid var(--line-strong);
+  padding-bottom:8px;
+  margin-bottom:var(--sp-3);
+}
+.section-h2 .num{
+  font-family:var(--font-ui);
+  font-size:12px;
+  letter-spacing:.18em;
+  color:var(--accent);
+  font-weight:700;
+}
+.section-h2 h2{margin:0;font-size:23px;}
+.section-h2 .hint{font-family:var(--font-ui);font-size:12.5px;color:var(--ink-faint);margin-left:auto;}
+.lead{font-size:16px;color:var(--ink-soft);}
+[id]{scroll-margin-top:var(--sticky-offset);}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(200,150,62,.16),transparent 46%),
+    linear-gradient(160deg,#243843 0%,#2f4858 52%,#3a5566 100%);
+  color:#f2ead9;
+  overflow:hidden;
+  border-bottom:1px solid var(--line-strong);
+}
+.hero-in{
+  max-width:var(--w-max);
+  margin:0 auto;
+  padding:var(--sp-6) var(--sp-3) var(--sp-5);
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:var(--sp-5);
+  align-items:center;
+}
+.hero-kicker{
+  font-family:var(--font-ui);
+  font-size:12px;
+  letter-spacing:.28em;
+  color:var(--gold);
+  margin-bottom:var(--sp-2);
+}
+.hero h1{
+  color:#fbf5e8;
+  font-size:clamp(28px,4.4vw,46px);
+  letter-spacing:.01em;
+  margin-bottom:var(--sp-3);
+  text-shadow:0 2px 18px rgba(0,0,0,.25);
+}
+.hero-desc{
+  font-size:16.5px;
+  color:#d9cfbd;
+  max-width:36em;
+  margin-bottom:var(--sp-3);
+}
+.hero-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-4);}
+.hero .btn{border-color:rgba(242,234,217,.35);background:transparent;color:#f2ead9;}
+.hero .btn:hover{background:rgba(242,234,217,.12);}
+.hero .btn-primary{background:var(--gold);border-color:var(--gold);color:#241a08;}
+.hero .btn-primary:hover{background:#dcae57;}
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:var(--sp-2);
+  border-top:1px solid rgba(242,234,217,.2);
+  padding-top:var(--sp-3);
+  max-width:520px;
+}
+.hero-stats div{font-family:var(--font-ui);}
+.hero-stats b{display:block;font-size:22px;color:var(--gold);font-weight:800;letter-spacing:.02em;}
+.hero-stats span{font-size:11.5px;letter-spacing:.1em;color:#bfb4a0;}
+.hero-art{position:relative;min-height:280px;}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 26px rgba(0,0,0,.3));}
+
+/* ---------- 三栏门户 ---------- */
+.portal{
+  max-width:var(--w-max);
+  margin:0 auto;
+  padding:var(--sp-5) var(--sp-3) var(--sp-6);
+  display:grid;
+  grid-template-columns:200px minmax(0,1fr) 268px;
+  gap:var(--sp-4);
+  align-items:start;
+}
+.side-nav{
+  position:sticky;
+  top:var(--sticky-offset);
+  font-family:var(--font-ui);
+  font-size:13.5px;
+  border:1px solid var(--line);
+  background:var(--card);
+  border-radius:var(--r-md);
+  padding:var(--sp-2) 0;
+  box-shadow:var(--shadow-1);
+}
+.side-nav .nav-title{
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--ink-faint);
+  padding:0 16px 8px;
+}
+.side-nav a{
+  display:block;
+  padding:7px 16px;
+  color:var(--ink-soft);
+  border-left:3px solid transparent;
+}
+.side-nav a:hover{background:var(--paper-alt);color:var(--primary-deep);}
+.side-nav a.active{border-left-color:var(--accent);color:var(--primary-deep);background:var(--paper-alt);font-weight:700;}
+.main-col{min-width:0;}
+.aside-col{min-width:0;}
+
+/* ---------- 板块卡片通用 ---------- */
+.panel{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--r-lg);
+  padding:var(--sp-3) var(--sp-4);
+  margin-bottom:var(--sp-4);
+  box-shadow:var(--shadow-1);
+}
+.panel > h3{font-size:18px;margin-bottom:var(--sp-2);}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--sp-2);}
+.tag{
+  font-family:var(--font-ui);
+  font-size:12.5px;
+  padding:4px 11px;
+  border-radius:999px;
+  background:var(--paper-alt);
+  border:1px solid var(--line);
+  color:var(--ink-soft);
+  display:inline-block;
+}
+a.tag:hover{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);}
+
+/* 频道索引 */
+.channel-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(158px,1fr));
+  gap:var(--sp-2);
+}
+.channel-card{
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  padding:12px 14px;
+  background:var(--card);
+  display:block;
+  transition:transform .16s ease,border-color .16s ease;
+}
+.channel-card:hover{transform:translateY(-3px);border-color:var(--accent);}
+.channel-card b{display:block;font-family:var(--font-ui);font-size:14.5px;color:var(--primary-deep);}
+.channel-card small{font-family:var(--font-ui);font-size:11.5px;color:var(--ink-faint);letter-spacing:.04em;}
+
+/* 精选内容 */
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:var(--sp-3);
+}
+.feature-card{
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  overflow:hidden;
+  background:var(--card);
+  display:flex;
+  flex-direction:column;
+}
+.feature-card img{width:100%;height:148px;object-fit:cover;}
+.feature-card .fc-body{padding:14px 16px 16px;}
+.feature-card h3{font-size:16.5px;margin-bottom:6px;}
+.feature-card p{font-size:14px;color:var(--ink-soft);margin-bottom:8px;}
+.meta-line{font-family:var(--font-ui);font-size:12px;color:var(--ink-faint);letter-spacing:.03em;}
+
+/* 最新更新：紧凑列表 */
+.upd-list{list-style:none;padding:0;margin:0;}
+.upd-list li{
+  display:grid;
+  grid-template-columns:78px minmax(0,1fr);
+  gap:var(--sp-2);
+  padding:11px 0;
+  border-bottom:1px dashed var(--line);
+  align-items:baseline;
+}
+.upd-list li:last-child{border-bottom:0;}
+.upd-list .date{font-family:var(--font-ui);font-size:12px;color:var(--accent);letter-spacing:.04em;}
+.upd-list .txt{font-size:14.5px;color:var(--ink-soft);}
+.upd-list .txt b{color:var(--primary-deep);}
+
+/* 深度解析 */
+.article-body{font-size:16px;}
+.article-body h3{font-size:18.5px;margin-top:var(--sp-3);padding-left:10px;border-left:4px solid var(--accent);}
+.article-body p{color:#33434d;}
+.quote-card{
+  border-left:4px solid var(--gold);
+  background:var(--paper-alt);
+  padding:14px 18px;
+  border-radius:0 var(--r-md) var(--r-md) 0;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:var(--sp-2) 0;
+}
+.quote-card cite{display:block;font-family:var(--font-ui);font-size:12px;color:var(--ink-faint);margin-top:6px;font-style:normal;}
+
+/* 判断拆解表 */
+.check-table{width:100%;border-collapse:collapse;font-size:14px;font-family:var(--font-ui);margin:var(--sp-2) 0;}
+.check-table th,.check-table td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
+.check-table th{background:var(--paper-alt);color:var(--primary-deep);font-size:13px;letter-spacing:.04em;}
+.check-table td{color:var(--ink-soft);}
+.check-table .verdict{font-weight:700;color:var(--accent);}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;padding:0;counter-reset:step;margin:0;}
+.steps li{
+  position:relative;
+  padding:12px 0 12px 52px;
+  border-bottom:1px dashed var(--line);
+  counter-increment:step;
+}
+.steps li:last-child{border-bottom:0;}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);
+  position:absolute;
+  left:0;
+  top:12px;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:var(--primary);
+  color:var(--gold);
+  font-family:var(--font-ui);
+  font-size:13px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.steps b{color:var(--primary-deep);}
+
+/* 对照面板 */
+.compare{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  overflow:hidden;
+}
+.compare > div{padding:16px 18px;}
+.compare .c-left{background:var(--paper-alt);border-right:1px solid var(--line);}
+.compare h4{font-size:15px;margin-bottom:8px;font-family:var(--font-ui);}
+.compare ul{font-size:14px;color:var(--ink-soft);padding-left:1.1em;margin:0;}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  background:var(--card);
+  margin-bottom:10px;
+  overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;
+  padding:13px 16px;
+  font-family:var(--font-ui);
+  font-size:15px;
+  font-weight:700;
+  color:var(--primary-deep);
+  list-style:none;
+  position:relative;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";position:absolute;right:16px;top:12px;color:var(--accent);font-size:18px;font-weight:400;}
+.faq details[open] summary::after{content:"−";}
+.faq details[open] summary{background:var(--paper-alt);}
+.faq .faq-a{padding:2px 16px 14px;font-size:14.5px;color:var(--ink-soft);border-top:1px solid var(--line);}
+
+/* 评论 */
+.comment-list{list-style:none;padding:0;margin:0;}
+.comment-list li{
+  padding:13px 0;
+  border-bottom:1px dashed var(--line);
+  font-size:14.5px;
+  color:var(--ink-soft);
+}
+.comment-list li:last-child{border-bottom:0;}
+.comment-list .who{font-family:var(--font-ui);font-size:12.5px;color:var(--primary-deep);font-weight:700;margin-right:8px;}
+.comment-list .when{font-family:var(--font-ui);font-size:11.5px;color:var(--ink-faint);}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank;}
+.rank-list li{
+  counter-increment:rank;
+  display:grid;
+  grid-template-columns:34px minmax(0,1fr) auto;
+  gap:var(--sp-2);
+  align-items:center;
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+  font-size:14.5px;
+}
+.rank-list li::before{
+  content:counter(rank);
+  font-family:var(--font-ui);
+  font-size:14px;
+  font-weight:800;
+  color:var(--card);
+  background:var(--primary);
+  width:26px;height:26px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+}
+.rank-list li:nth-child(1)::before{background:var(--accent);}
+.rank-list li:nth-child(2)::before{background:var(--gold);}
+.rank-list .score{font-family:var(--font-ui);font-size:12px;color:var(--ink-faint);}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line-strong);}
+.timeline li{position:relative;padding:0 0 var(--sp-3) var(--sp-3);}
+.timeline li::before{
+  content:"";
+  position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;
+  background:var(--card);border:3px solid var(--accent);
+}
+.timeline .t-date{font-family:var(--font-ui);font-size:12px;color:var(--accent);letter-spacing:.06em;}
+.timeline .t-body{font-size:14.5px;color:var(--ink-soft);}
+
+/* 侧栏卡片 */
+.aside-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  padding:var(--sp-3) var(--sp-3);
+  margin-bottom:var(--sp-3);
+  box-shadow:var(--shadow-1);
+}
+.aside-card h3{font-size:15.5px;font-family:var(--font-ui);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.aside-card ul{list-style:none;padding:0;margin:0;font-size:14px;}
+.aside-card li{padding:7px 0;border-bottom:1px dashed var(--line);}
+.aside-card li:last-child{border-bottom:0;}
+.aside-card a{color:var(--ink-soft);}
+.aside-card a:hover{color:var(--accent);}
+.aside-card .aside-note{font-family:var(--font-ui);font-size:12px;color:var(--ink-faint);line-height:1.6;}
+
+/* 相关推荐标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:8px;}
+.tag-index a{
+  font-family:var(--font-ui);
+  font-size:13px;
+  padding:6px 13px;
+  background:var(--card);
+  border:1px solid var(--line-strong);
+  border-radius:var(--r-sm);
+  color:var(--ink-soft);
+  transition:transform .16s ease;
+}
+.tag-index a:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--accent);}
+
+/* 相关资讯 */
+.news-list{list-style:none;padding:0;margin:0;}
+.news-list li{padding:11px 0;border-bottom:1px dashed var(--line);font-size:14.5px;}
+.news-list li:last-child{border-bottom:0;}
+.news-list .n-src{font-family:var(--font-ui);font-size:12px;color:var(--ink-faint);margin-left:6px;}
+.news-list b{color:var(--primary-deep);}
+
+/* 创作者证言 */
+.testi{
+  border-radius:var(--r-md);
+  background:linear-gradient(145deg,#2f4858,#243843);
+  color:#e8dfcd;
+  padding:var(--sp-3) var(--sp-4);
+}
+.testi blockquote{margin:0 0 var(--sp-2);font-size:15.5px;line-height:1.8;}
+.testi footer{font-family:var(--font-ui);font-size:12.5px;color:#bfb09a;letter-spacing:.04em;}
+
+/* 页尾 */
+.site-foot{
+  background:var(--primary-deep);
+  color:#c9c0ae;
+  font-family:var(--font-ui);
+  font-size:13.5px;
+  margin-top:var(--sp-5);
+}
+.foot-in{max-width:var(--w-max);margin:0 auto;padding:var(--sp-5) var(--sp-3) var(--sp-3);}
+.foot-top{
+  display:grid;
+  grid-template-columns:1.4fr repeat(2,1fr);
+  gap:var(--sp-4);
+  padding-bottom:var(--sp-4);
+  border-bottom:1px solid rgba(201,192,174,.22);
+}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.foot-brand svg{width:34px;height:34px;}
+.foot-brand b{color:#f2ead9;font-size:16px;letter-spacing:.04em;font-family:var(--font-ui);}
+.foot-tagline{font-size:13px;color:#a9a090;line-height:1.75;max-width:26em;}
+.foot-col h4{color:#f2ead9;font-size:13px;letter-spacing:.12em;margin-bottom:10px;font-weight:700;}
+.foot-col ul{list-style:none;padding:0;margin:0;}
+.foot-col li{margin-bottom:7px;}
+.foot-col a{color:#b8ae9c;font-size:13px;}
+.foot-col a:hover{color:var(--gold);}
+.foot-bottom{
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--sp-2);
+  justify-content:space-between;
+  padding-top:var(--sp-3);
+  font-size:12px;
+  color:#8f8778;
+  line-height:1.8;
+}
+.foot-bottom .sample{max-width:52em;}
+.foot-bottom .sample b{color:#c9c0ae;font-weight:700;}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;
+  right:18px;
+  bottom:20px;
+  width:44px;height:44px;
+  border-radius:50%;
+  background:var(--primary);
+  color:var(--gold);
+  border:1px solid rgba(200,150,62,.5);
+  font-size:18px;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:var(--shadow-2);
+  z-index:70;
+}
+.to-top.show{display:flex;}
+.to-top:hover{transform:translateY(-3px);}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1080px){
+  .portal{grid-template-columns:168px minmax(0,1fr);}
+  .aside-col{grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3);}
+  .aside-card{margin-bottom:0;}
+  .hero-in{grid-template-columns:1fr;}
+  .hero-art{max-width:420px;margin:0 auto;}
+}
+@media (max-width:860px){
+  .portal{grid-template-columns:minmax(0,1fr);}
+  .side-nav{position:static;display:flex;flex-wrap:wrap;gap:0;padding:8px;overflow-x:auto;}
+  .side-nav .nav-title{display:none;}
+  .side-nav a{border-left:0;border-bottom:3px solid transparent;padding:6px 11px;white-space:nowrap;}
+  .side-nav a.active{border-left:0;border-bottom-color:var(--accent);}
+  .aside-col{grid-template-columns:1fr;}
+  .feature-grid{grid-template-columns:1fr;}
+  .foot-top{grid-template-columns:1fr 1fr;}
+  .foot-top > div:first-child{grid-column:1 / -1;}
+  .hero-stats{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:720px){
+  body{font-size:16px;}
+  .head-in{flex-wrap:wrap;gap:8px;padding:8px 14px;}
+  .menu-toggle{display:inline-block;margin-left:auto;}
+  .main-nav{
+    display:none;
+    order:5;
+    width:100%;
+    margin-left:0;
+    flex-direction:column;
+    align-items:stretch;
+    border-top:1px solid var(--line);
+    padding-top:6px;
+  }
+  .main-nav.open{display:flex;}
+  .main-nav a{padding:10px 6px;}
+  .head-tools{order:4;}
+  .search-box input{width:100px;}
+  .compare{grid-template-columns:1fr;}
+  .compare .c-left{border-right:0;border-bottom:1px solid var(--line);}
+  .panel{padding:var(--sp-2) var(--sp-3);}
+  .section{padding:var(--sp-4) 0;}
+  .upd-list li{grid-template-columns:66px minmax(0,1fr);}
+  .channel-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:400px){
+  .hero-stats{grid-template-columns:1fr 1fr;}
+  .brand-sub{display:none;}
+  .search-feedback{width:240px;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{transition:none!important;animation:none!important;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce">
+    <div class="announce-in">
+      <strong>挠脚心tk捆绑网站</strong>
+      <span class="sep">|</span>
+      <span>11月7日更新：绳缚安全检查表 v2、挠痒节奏指南、4条社区问答</span>
+      <span class="sep">|</span>
+      <a href="/#updates">查看更新记录</a>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="head-in">
+      <a class="brand" href="/#" aria-label="返回首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2f4858"/>
+          <path d="M17 45c5-11 9-19 13-26 2 9 2 17 0 26 6-4 10-4 14 0" fill="none" stroke="#e0b26a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="21" cy="21" r="3.2" fill="#e0b26a"/>
+          <circle cx="43" cy="47" r="2.6" fill="#b8642a"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">挠脚心tk捆绑网站</span>
+          <span class="brand-sub">SCENE · SAFETY · GUIDE</span>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#channels">频道索引</a>
+        <a href="/#featured">精选内容</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见疑问</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box">
+          <label class="sr-only" for="siteSearch">站内搜索</label>
+          <input type="search" id="siteSearch" placeholder="搜索绳缚/挠痒" autocomplete="off">
+          <button class="btn" type="button" id="searchBtn">查找</button>
+          <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+        </div>
+        <button class="btn menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-in">
+      <div>
+        <p class="hero-kicker">TK · TICKLE · ROPE PLAY</p>
+        <h1 id="heroTitle">挠脚心tk捆绑网站</h1>
+        <p class="hero-desc">整理与挠脚心、轻度捆绑相关的场景知识：从绳材选择、安全词设置到挠痒节奏与足部护理，按条目归档，方便检索与核对。所有示例条目均由编辑按公开讨论与器物常识整理，非真实用户上传。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#channels">浏览频道索引</a>
+          <a class="btn" href="/#guide">新手体验指南</a>
+          <a class="btn" href="/#faq">常见疑问</a>
+        </div>
+        <div class="hero-stats" aria-label="内容规模">
+          <div><b>10</b><span>主题频道</span></div>
+          <div><b>36</b><span>场景条目</span></div>
+          <div><b>18</b><span>装备笔记</span></div>
+          <div><b>24</b><span>社区问答</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 320" role="img">
+          <defs>
+            <linearGradient id="ropeG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e0b26a"/>
+              <stop offset="1" stop-color="#b8642a"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="210" cy="286" rx="150" ry="16" fill="rgba(0,0,0,.18)"/>
+          <path d="M96 250c-14-46-6-96 28-126 30-26 74-28 104-2 34 30 40 82 22 126" fill="none" stroke="url(#ropeG)" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+          <path d="M118 128c30-24 74-26 106-4" fill="none" stroke="#f2ead9" stroke-width="3" stroke-dasharray="6 8" opacity=".5"/>
+          <circle cx="118" cy="128" r="7" fill="#e0b26a"/>
+          <circle cx="224" cy="124" r="7" fill="#e0b26a"/>
+          <path d="M150 190c18-10 40-10 58 0" fill="none" stroke="#f2ead9" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+          <path d="M168 168c8 12 24 12 32 0" fill="none" stroke="#e0b26a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M300 86c16 8 22 26 14 42-8 16-26 22-42 14" fill="none" stroke="#e0b26a" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+          <path d="M310 200c-14 10-34 6-42-8" fill="none" stroke="#f2ead9" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+          <circle cx="330" cy="150" r="4" fill="#e0b26a"/>
+          <circle cx="70" cy="196" r="4" fill="#f2ead9" opacity=".5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏门户 -->
+  <div class="portal">
+    <!-- 左侧导航 -->
+    <nav class="side-nav" id="sideNav" aria-label="页内栏目导航">
+      <div class="nav-title">栏目导航</div>
+      <a href="/#overview">领域概览</a>
+      <a href="/#channels">频道索引</a>
+      <a href="/#featured">精选内容</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#compare">场景对照</a>
+      <a href="/#faq">常见疑问</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#rank">装备榜单</a>
+      <a href="/#timeline">社区时间线</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#tags">相关推荐</a>
+    </nav>
+
+    <!-- 主内容 -->
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="section panel" id="overview" aria-labelledby="overviewH">
+        <div class="section-h2">
+          <span class="num">01</span>
+          <h2 id="overviewH">领域概览：挠脚心与捆绑分别指什么</h2>
+          <span class="hint">概念 · 类型 · 边界</span>
+        </div>
+        <p>在公开讨论中，“TK”通常指 tickling（挠痒），核心是足底、脚趾缝、膝窝等敏感区的轻触与节奏控制；“捆绑”多指用绳材对脚踝、手腕或小腿做轻度固定，目的通常是限制动作幅度而非完全悬吊。两者组合时，动作的重心落在“脚被固定后被动接受刺激”这一场景上。</p>
+        <p>把这两个动作分开看，规则并不一样。挠痒的风险点集中在皮肤摩擦、指甲划伤与受试者的笑呛反应；捆绑的风险点集中在血液循环、关节压迫与绳索松脱。常见绳材有三大类：直径6mm的合成麻绳适合新手，接头软、不易勒痕；直径8mm的棉绳摩擦大，需要更宽的绳距；运动绷带或魔术贴在体验课里用得更多，因为松开时间短。</p>
+        <p>时长上，单次足底挠痒通常控制在8到15分钟，超过20分钟多数人会出现皮肤发红或情绪疲劳。固定脚踝的单柱结在练习中一般每5分钟检查一次松紧，能塞进一根手指为合适。这些数字来自公开的绳艺教学笔记，属于经验区间，不是医学结论。</p>
+        <div class="tag-row" aria-label="领域关键词">
+          <span class="tag">足底敏感区</span>
+          <span class="tag">脚踝单柱结</span>
+          <span class="tag">绳距与勒痕</span>
+          <span class="tag">安全词</span>
+          <span class="tag">笑呛反应</span>
+          <span class="tag">足部护理</span>
+        </div>
+      </section>
+
+      <!-- 频道索引 -->
+      <section class="section panel" id="channels" aria-labelledby="channelsH">
+        <div class="section-h2">
+          <span class="num">02</span>
+          <h2 id="channelsH">10个频道：按玩法与装备分类</h2>
+          <span class="hint">按需检索</span>
+        </div>
+        <div class="channel-grid">
+          <a class="channel-card" href="/#featured"><b>绳缚基础入门</b><small>单柱结 · 绳材</small></a>
+          <a class="channel-card" href="/#featured"><b>脚踝固定方式</b><small>松紧 · 检查</small></a>
+          <a class="channel-card" href="/#featured"><b>足底挠痒节奏</b><small>轻触 · 停顿</small></a>
+          <a class="channel-card" href="/#featured"><b>羽毛与软刷道具</b><small>材质 · 清洁</small></a>
+          <a class="channel-card" href="/#featured"><b>安全词与手势</b><small>红黄绿 · 备忘</small></a>
+          <a class="channel-card" href="/#featured"><b>足部护理记录</b><small>保湿 · 甲缘</small></a>
+          <a class="channel-card" href="/#featured"><b>情景脚本写作</b><small>台词 · 分镜</small></a>
+          <a class="channel-card" href="/#featured"><b>新手体验课复盘</b><small>流程 · 反馈</small></a>
+          <a class="channel-card" href="/#featured"><b>绳材选购与保养</b><small>直径 · 打蜡</small></a>
+          <a class="channel-card" href="/#featured"><b>社区问答归档</b><small>高频 · 逐条</small></a>
+        </div>
+        <p class="meta-line" style="margin-top:14px;">频道按“动作—装备—规则—记录”四层排列，点开任意频道可跳到对应精选条目；尚未独立成页的内容统一收在问答归档里。</p>
+      </section>
+
+      <!-- 精选内容 -->
+      <section class="section panel" id="featured" aria-labelledby="featuredH">
+        <div class="section-h2">
+          <span class="num">03</span>
+          <h2 id="featuredH">精选内容推荐</h2>
+          <span class="hint">编辑按条目完整度挑选</span>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="https://picsum.photos/seed/tk-rope-ankle/640/300" width="640" height="300" loading="lazy" alt="浅色麻绳在木桌上盘成单柱结，旁边放着一把卷尺">
+            <div class="fc-body">
+              <h3>脚踝单柱结：6mm麻绳的两指检查法</h3>
+              <p>演示一根6mm麻绳绕脚踝两圈后的收尾方式，并给出“两指塞入、每5分钟复查”的判断标准。附三种松脱手法的先后顺序。</p>
+              <span class="meta-line">频道 / 绳缚基础入门 · 11月5日整理</span>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="https://picsum.photos/seed/tk-feather-tools/640/300" width="640" height="300" loading="lazy" alt="桌面上的羽毛棒、软毛刷和一小瓶润肤乳">
+            <div class="fc-body">
+              <h3>足底挠痒道具清单：羽毛、软刷与指尖的差异</h3>
+              <p>按刺激强度把工具分成三档：羽毛偏痒感、软毛刷偏麻、指尖偏直接。每种工具记录清洁方式与单次使用时长。</p>
+              <span class="meta-line">频道 / 羽毛与软刷道具 · 11月4日整理</span>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="https://picsum.photos/seed/tk-safeword-card/640/300" width="640" height="300" loading="lazy" alt="一张手写卡片，上面写着红黄绿三色安全词提示">
+            <div class="fc-body">
+              <h3>安全词红黄绿：三种暂停级别怎么写进备忘卡</h3>
+              <p>把“继续、减慢、停止”拆成三个词和两个手势，照顾到嘴里含物、笑到说不出话的情形。卡片可打印，贴在绳材收纳箱内侧。</p>
+              <span class="meta-line">频道 / 安全词与手势 · 11月3日整理</span>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="https://picsum.photos/seed/tk-foot-care/640/300" width="640" height="300" loading="lazy" alt="足部护理用品摆放：毛巾、润肤乳、指甲锉">
+            <div class="fc-body">
+              <h3>体验后足部护理：15分钟的三步收尾</h3>
+              <p>温水冲洗、擦干趾缝、薄涂润肤乳。指甲提前修圆能减少划伤，脚底发红超过半小时应停止下一次的同类动作。</p>
+              <span class="meta-line">频道 / 足部护理记录 · 11月2日整理</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="section panel" id="updates" aria-labelledby="updatesH">
+        <div class="section-h2">
+          <span class="num">04</span>
+          <h2 id="updatesH">最新更新</h2>
+          <span class="hint">11月1日—11月7日</span>
+        </div>
+        <ul class="upd-list">
+          <li><span class="date">11月7日</span><span class="txt"><b>绳缚安全检查表 v2 发布</b>，把原来的5项扩展到9项，新增“指尖温度”“脚背颜色”两项观察点。</span></li>
+          <li><span class="date">11月6日</span><span class="txt">问答归档新增4条：<b>脚趾缝被羽毛扫过为什么特别痒</b>、<b>棉绳和麻绳的差别</b>、<b>笑到咳嗽要不要停</b>、<b>一个人能否练习</b>。</span></li>
+          <li><span class="date">11月5日</span><span class="txt"><b>《脚踝单柱结：两指检查法》</b>配图更新，标出绳头收尾的两个易松位置。</span></li>
+          <li><span class="date">11月4日</span><span class="txt">道具清单加入<b>软毛刷清洁间隔</b>：每次使用后用中性皂清洗、阴干，避免与毛巾混放。</span></li>
+          <li><span class="date">11月3日</span><span class="txt"><b>安全词备忘卡</b>改为可打印版本，手势图示增至3个。</span></li>
+          <li><span class="date">11月2日</span><span class="txt">足部护理记录补充<b>甲缘修整角度</b>，减少挠痒时指甲边缘的刮擦。</span></li>
+          <li><span class="date">11月1日</span><span class="txt">情景脚本栏目新增<b>“15分钟短场景”模板</b>：开场沟通、动作分段、收尾对话各占5分钟。</span></li>
+        </ul>
+      </section>
+
+      <!-- 深度解析（唯一主体阅读区） -->
+      <section class="section panel" id="deep" aria-labelledby="deepH">
+        <div class="section-h2">
+          <span class="num">05</span>
+          <h2 id="deepH">深度解析：固定脚踝到底该多紧</h2>
+          <span class="hint">全页唯一长文</span>
+        </div>
+        <div class="article-body">
+          <p>脚踝固定是这套玩法里最容易被低估的一步。绳子太松，脚一抽就脱，体验中断；太紧，脚背发凉、脚趾发麻，几分钟后就不舒服。公开教学里流传一句话——“能塞进两根手指”，但两根手指的粗细差别很大，我把这个说法拆成可核对的部分。</p>
+
+          <h3>说法来源与三种版本的对齐</h3>
+          <p>2026年10月下旬，三个常见的绳艺教学账号分别给出不同措辞：A账号写“绳与皮肤之间留一指”，B账号写“能平放两指”，C账号写“拉出后能塞进一根手指的侧边”。10月28日一条社区长帖把三者并列，指出“一指”通常指食指宽度，约1.5到2厘米；两指并排约2.5到3厘米。差别在0.8厘米左右，落到脚踝上就是明显不同的压迫感。</p>
+          <p>我的判断是：脚踝位置用“一指侧塞”更稳。脚踝皮下脂肪薄，两指松量在站立时勉强够，可一旦脚被抬高、肌肉放松，绳子容易滑向下腓骨，反而形成局部压点。这个判断可以用一个简单动作核对——固定后让脚做背屈与跖屈各两次，绳子如果明显下滑超过一横指，就该重绑。</p>
+
+          <table class="check-table">
+            <caption class="sr-only">脚踝固定松紧的判断拆解</caption>
+            <thead>
+              <tr><th>可核对项</th><th>操作</th><th>判断</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>指缝塞入</td><td>食指侧边沿绳下平伸</td><td class="verdict">能进一节半指节为合适</td></tr>
+              <tr><td>脚背颜色</td><td>固定5分钟后对比双脚</td><td class="verdict">发白或发紫立即松绑</td></tr>
+              <tr><td>脚趾温度</td><td>手背贴脚趾根部</td><td class="verdict">明显凉于另一只脚需复查</td></tr>
+              <tr><td>活动余量</td><td>背屈、跖屈各两次</td><td class="verdict">下滑超过一横指则重绑</td></tr>
+              <tr><td>时间上限</td><td>单次固定连续计时</td><td class="verdict">12分钟必须松开一次</td></tr>
+            </tbody>
+          </table>
+
+          <h3>棉绳与麻绳：6mm和8mm的差别落在哪</h3>
+          <p>10月30日一份绳材对比笔记记录了同一位练习者用三种绳绑脚踝的感受：6mm合成麻绳、8mm棉绳、5cm宽运动绷带。麻绳的优点是接头小、收尾利落，缺点是打蜡不足时表面毛刺会刮皮肤；棉绳摩擦力大，绳结不易自松，但8mm在脚踝绕两圈就显得厚，压痕更宽。绷带最安全，松开只要几秒，适合第一次尝试的人。</p>
+          <p>这三种材料的价格区间也值得记下：6mm麻绳约每米8到12元，8mm棉绳约每米10到15元，运动绷带一卷约15到25元。预算有限的新手先买绷带加一根麻绳即可，棉绳可以等确定自己会长期练习再补。</p>
+
+          <div class="quote-card">
+            有练习者认为脚踝固定越紧越有“被控制感”，但从10月的三轮体验记录看，压迫感在固定后第4分钟达到峰值，第6分钟后注意力会转向脚背发胀，挠痒本身的感受反而下降。紧不等于沉浸。
+            <cite>—— 社区长帖“固定脚踝的三次复盘”，10月28日</cite>
+          </div>
+
+          <h3>事实、回应与推测要分开</h3>
+          <p>事实层面：绳子在脚踝处每绕一圈都会增加接触面积，两圈比一圈稳，但收尾结要落在脚踝外侧，不能压在跟腱上。回应层面：有读者在10月31日评论里提出“单柱结不如双柱结稳”，这一说法只在脚被抬高的情况下成立；脚平放时，双柱结反而更容易向下滑。推测层面：11月2日有人推测麻绳打蜡后摩擦力下降会导致自松，目前只有一位练习者的口述记录，尚不足以当作通用结论。</p>
+          <p>把这几层拆开后，可以给出一条可反驳的判断：脚踝固定的安全阈值不取决于绳结花样，而取决于“检查频率”。同样的单柱结，每5分钟查一次和全程不查，风险完全不同。这一条如果被证伪，应该来自“固定时间更长但检查更频繁仍出现不适”的案例，而不是单纯的花样对比。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="section panel" id="guide" aria-labelledby="guideH">
+        <div class="section-h2">
+          <span class="num">06</span>
+          <h2 id="guideH">体验指南：第一次的六个步骤</h2>
+          <span class="hint">可照着做</span>
+        </div>
+        <ol class="steps">
+          <li><b>提前一天沟通。</b>把想尝试的动作、禁区、可接受时长写下来互相对一遍，明确“脚趾缝不碰”“单次不超过15分钟”这类具体边界，比只说“轻一点”有用。</li>
+          <li><b>准备三样东西。</b>绳材或绷带、安全剪、一条干毛巾。安全剪放在伸手可及的位置，毛巾用于中途擦脚底汗液，减少打滑。</li>
+          <li><b>先固定，再试触。</b>脚踝固定后先不挠，静置2分钟观察脚背颜色与脚趾温度，确认没有发麻再开始。</li>
+          <li><b>节奏从慢到快。</b>前3分钟用羽毛或指尖轻扫足弓，中间3分钟换软刷在脚掌前缘短促点触，最后2分钟放慢收尾，让痒感自然降下来。</li>
+          <li><b>每5分钟报一次状态。</b>用红黄绿三个词回应，说不出话就用手势。笑到咳嗽、脚趾持续蜷缩、皮肤明显发红，都是该停的信号。</li>
+          <li><b>松开后缓两分钟。</b>先解结再抬脚，坐起后等脚背颜色恢复正常再站立，随后温水冲洗、擦干趾缝、薄涂润肤乳。</li>
+        </ol>
+      </section>
+
+      <!-- 场景对照 -->
+      <section class="section panel" id="compare" aria-labelledby="compareH">
+        <div class="section-h2">
+          <span class="num">07</span>
+          <h2 id="compareH">场景对照：挠痒与捆绑的风险点不同</h2>
+          <span class="hint">并排看</span>
+        </div>
+        <div class="compare">
+          <div class="c-left">
+            <h4>足底挠痒</h4>
+            <ul>
+              <li>主要风险：指甲划伤、笑呛、皮肤摩擦发红</li>
+              <li>单次时长建议：8—15分钟</li>
+              <li>关键道具：羽毛棒、软毛刷、润肤乳</li>
+              <li>停止信号：连续咳嗽、脚趾僵直、皮肤破皮</li>
+              <li>事后处理：温水冲洗、擦干趾缝</li>
+            </ul>
+          </div>
+          <div>
+            <h4>脚踝捆绑</h4>
+            <ul>
+              <li>主要风险：血液循环受压、关节压迫、绳结松脱</li>
+              <li>单次固定建议：不超过12分钟，每5分钟复查</li>
+              <li>关键道具：6mm麻绳、运动绷带、安全剪</li>
+              <li>停止信号：脚背发白、脚趾发凉、局部刺痛</li>
+              <li>事后处理：先解结、缓两分钟再站立</li>
+            </ul>
+          </div>
+        </div>
+        <p class="meta-line" style="margin-top:12px;">两列数字来自公开教学笔记与体验记录，属于经验区间；出现持续疼痛或颜色异常应停止并咨询专业人士。</p>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section panel faq" id="faq" aria-labelledby="faqH">
+        <div class="section-h2">
+          <span class="num">08</span>
+          <h2 id="faqH">常见疑问</h2>
+          <span class="hint">24条归档中的6条</span>
+        </div>
+        <details>
+          <summary>脚趾缝被羽毛扫过为什么特别痒？</summary>
+          <div class="faq-a">脚趾缝的皮肤薄、神经末梢密集，羽毛的细丝会同时触发多处轻触感受器，痒感因此比脚掌更集中。体验时可先用羽毛沿趾缝外侧单向扫，避免来回反复摩擦同一处，单侧不超过30秒。</div>
+        </details>
+        <details>
+          <summary>6mm麻绳和8mm棉绳，新手先买哪种？</summary>
+          <div class="faq-a">麻绳更轻、收尾结更小，绕脚踝两圈后压痕窄，适合第一次练习；棉绳摩擦力大但厚度明显，8mm在脚踝上容易形成宽压痕。预算允许的话先买一根6mm麻绳加一卷运动绷带，绷带用于快速试错。</div>
+        </details>
+        <details>
+          <summary>笑到咳嗽要不要立刻停？</summary>
+          <div class="faq-a">要停。连续咳嗽说明呼吸节奏被打乱，继续刺激容易呛到。松开绳子、让脚放平，等呼吸平稳再决定是否继续，重新开始时把刺激强度降一档。</div>
+        </details>
+        <details>
+          <summary>一个人能不能练习捆绑和挠痒？</summary>
+          <div class="faq-a">固定类动作不建议单独练习，绳结松脱和体位变化时没人协助，风险高。挠痒可以单独做感知练习，比如用羽毛轻扫脚掌记录不同区域的反应，但涉及固定脚踝的部分应有人在场。</div>
+        </details>
+        <details>
+          <summary>安全词用几个词比较合适？</summary>
+          <div class="faq-a">三个词最实用：一个表示继续、一个表示减慢、一个表示立即停止，再配两个手势应对说不出话的情况。词要短、发音清楚，提前一天对一遍，别在当下临时商量。</div>
+        </details>
+        <details>
+          <summary>体验后脚底发红要处理吗？</summary>
+          <div class="faq-a">轻度发红通常半小时内消退，用温水冲洗后擦干即可。若发红超过一小时、伴随刺痛或破皮，应停止下一次同类动作，保持足部干燥，必要时就医。指甲提前修圆能减少这类情况。</div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="section panel" id="comments" aria-labelledby="commentsH">
+        <div class="section-h2">
+          <span class="num">09</span>
+          <h2 id="commentsH">用户评论</h2>
+          <span class="hint">节选 · 保留原语气</span>
+        </div>
+        <ul class="comment-list">
+          <li><span class="who">绳结练习生</span><span class="when">11月6日</span><br>单柱结那篇的两指检查法我照着做了，脚踝绕两圈后确实能塞进一节半指节，比之前凭手感绑稳当多了。就是收尾结的位置我还是会压到跟腱，得再练。</li>
+          <li><span class="who">北岸</span><span class="when">11月5日</span><br>羽毛棒和软毛刷的差别写得挺实在。我原来以为越软越痒，试下来软刷在脚掌前缘那种短促点触反而更受不了，羽毛适合慢慢来。</li>
+          <li><span class="who">匿名用户</span><span class="when">11月5日</span><br>对照表里“12分钟必须松开”有点一刀切吧，我脚踝比较细，8分钟就开始发凉了。这种还是得看个人。</li>
+          <li><span class="who">橙子汽水</span><span class="when">11月4日</span><br>安全词备忘卡打印出来贴在收纳箱里了，红黄绿三个词比临时想靠谱。手势图示要是能再大一点就好了。</li>
+          <li><span class="who">路过的猫</span><span class="when">11月3日</span><br>足部护理那篇提到的甲缘修整角度，我按45度修完再试，划伤感确实少了。之前一直以为是指甲太长的问题。</li>
+          <li><span class="who">阿岚</span><span class="when">11月2日</span><br>深度解析里说“紧不等于沉浸”，我同意一半。固定得稳确实比固定得紧更重要，但每个人对压迫感的接受度差很多，别把经验区间当标准。</li>
+          <li><span class="who">藤椅</span><span class="when">11月1日</span><br>一个人练习那条问答回答得干脆，固定类动作确实不该单练。之前自己试过一次，绳结松了差点站不稳。</li>
+        </ul>
+      </section>
+
+      <!-- 装备榜单 -->
+      <section class="section panel" id="rank" aria-labelledby="rankH">
+        <div class="section-h2">
+          <span class="num">10</span>
+          <h2 id="rankH">装备榜单：新手入门优先级</h2>
+          <span class="hint">按上手难度排序</span>
+        </div>
+        <ol class="rank-list">
+          <li><span><b>运动绷带</b> · 5cm宽，松开只要几秒，适合第一次试固定</span><span class="score">难度 ★</span></li>
+          <li><span><b>6mm合成麻绳</b> · 接头小，配两指检查法练单柱结</span><span class="score">难度 ★★</span></li>
+          <li><span><b>安全剪</b> · 圆头设计，放在伸手可及处</span><span class="score">难度 ★</span></li>
+          <li><span><b>羽毛棒</b> · 细丝长，适合足弓慢扫</span><span class="score">难度 ★</span></li>
+          <li><span><b>软毛刷</b> · 刷毛短，用于脚掌前缘点触</span><span class="score">难度 ★★</span></li>
+          <li><span><b>8mm棉绳</b> · 摩擦力大，建议熟练后再用</span><span class="score">难度 ★★★</span></li>
+        </ol>
+      </section>
+
+      <!-- 社区时间线 -->
+      <section class="section panel" id="timeline" aria-labelledby="timelineH">
+        <div class="section-h2">
+          <span class="num">11</span>
+          <h2 id="timelineH">社区时间线：10月以来的条目变化</h2>
+          <span class="hint">可核对日期</span>
+        </div>
+        <ul class="timeline">
+          <li><div class="t-date">10月12日</div><div class="t-body">首版绳缚安全检查表上线，共5项，以“手指塞入”为核心判断。</div></li>
+          <li><div class="t-date">10月19日</div><div class="t-body">足底挠痒节奏条目加入“3—3—2”分段法，即轻扫3分钟、点触3分钟、放慢2分钟。</div></li>
+          <li><div class="t-date">10月26日</div><div class="t-body">问答归档突破20条，脚趾缝、笑呛、单独练习三个问题被反复引用。</div></li>
+          <li><div class="t-date">10月28日</div><div class="t-body">社区长帖并列三种“一指/两指”说法，成为11月检查表改版的直接触发点。</div></li>
+          <li><div class="t-date">11月2日</div><div class="t-body">足部护理记录补充甲缘修整角度，来自练习者回访。</div></li>
+          <li><div class="t-date">11月7日</div><div class="t-body">安全检查表 v2 发布，观察项由5项增至9项，新增脚背颜色与脚趾温度。</div></li>
+        </ul>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="section panel" id="news" aria-labelledby="newsH">
+        <div class="section-h2">
+          <span class="num">12</span>
+          <h2 id="newsH">相关资讯</h2>
+          <span class="hint">外部动态与版本差异</span>
+        </div>
+        <ul class="news-list">
+          <li>某绳艺教学账号11月6日发布视频，演示用运动绷带替代麻绳做脚踝固定，时长4分12秒。<span class="n-src">来源：账号公开视频</span></li>
+          <li>11月5日一份装备测评对比6mm麻绳与8mm棉绳的打结牢固度，结论是棉绳在干燥环境下自松概率低约三成。<span class="n-src">来源：装备测评笔记</span></li>
+          <li>11月4日社区投票“第一次体验最担心什么”，选项里“脚背发麻”得票最高，其次是“笑到停不下来”。<span class="n-src">来源：社区投票页</span></li>
+          <li>11月3日有练习者分享可打印的安全词卡模板，含三种颜色的圆点与两个手势图。<span class="n-src">来源：社区分享</span></li>
+          <li>11月1日情景脚本栏目发布“15分钟短场景”模板，把开场沟通与收尾对话固定成5分钟两段。<span class="n-src">来源：栏目更新</span></li>
+        </ul>
+      </section>
+
+      <!-- 相关推荐 标签索引 -->
+      <section class="section panel" id="tags" aria-labelledby="tagsH">
+        <div class="section-h2">
+          <span class="num">13</span>
+          <h2 id="tagsH">相关推荐</h2>
+          <span class="hint">长尾检索词</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#deep">脚踝单柱结怎么绑</a>
+          <a href="/#featured">足底挠痒道具推荐</a>
+          <a href="/#guide">挠脚心安全词设置</a>
+          <a href="/#faq">6mm麻绳与8mm棉绳区别</a>
+          <a href="/#guide">捆绑后足部护理步骤</a>
+          <a href="/#deep">脚背发凉要不要松绑</a>
+          <a href="/#featured">羽毛棒和软毛刷哪个更痒</a>
+          <a href="/#guide">第一次体验15分钟流程</a>
+          <a href="/#faq">笑到咳嗽怎么处理</a>
+          <a href="/#rank">新手绳材选购优先级</a>
+        </div>
+      </section>
+
+      <!-- 创作者证言 -->
+      <section class="section" id="voice" aria-labelledby="voiceH">
+        <div class="section-h2">
+          <span class="num">14</span>
+          <h2 id="voiceH">创作者证言</h2>
+          <span class="hint">长期练习者视角</span>
+        </div>
+        <div class="testi">
+          <blockquote>“我们这批人最早是在论坛里互相传绳结图，一个单柱结能讨论四十多楼。现在回头看，真正有用的不是哪种结更花，而是固定之后有没有人每五分钟问一句‘脚趾还暖吗’。上个月有条帖子把‘两指法’拆开量了宽度，我才意识到以前所谓经验其实是各人手指粗细不同。”</blockquote>
+          <footer>—— 绳结练习生，练习第4年，10月31日社区访谈</footer>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 右侧栏 -->
+    <aside class="aside-col" aria-label="侧栏">
+      <div class="aside-card">
+        <h3>本周高频检索</h3>
+        <ul>
+          <li><a href="/#deep">脚踝单柱结两指检查</a></li>
+          <li><a href="/#faq">笑到咳嗽要不要停</a></li>
+          <li><a href="/#guide">足底挠痒15分钟流程</a></li>
+          <li><a href="/#rank">6mm麻绳新手怎么选</a></li>
+          <li><a href="/#faq">一个人练习安不安全</a></li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <h3>安全提醒</h3>
+        <p class="aside-note">固定类动作每5分钟复查一次脚背颜色与脚趾温度；出现发白、发紫、刺痛立即松开。所有时长与松紧数字为经验区间，不替代专业意见。安全剪放在伸手可及处。</p>
+      </div>
+      <div class="aside-card">
+        <h3>问答归档入口</h3>
+        <ul>
+          <li><a href="/#faq">脚趾缝为什么特别痒</a></li>
+          <li><a href="/#faq">麻绳与棉绳的差别</a></li>
+          <li><a href="/#faq">安全词用几个词</a></li>
+          <li><a href="/#faq">脚底发红怎么处理</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#3a5566"/>
+            <path d="M17 45c5-11 9-19 13-26 2 9 2 17 0 26 6-4 10-4 14 0" fill="none" stroke="#e0b26a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="21" cy="21" r="3.2" fill="#e0b26a"/>
+          </svg>
+          <b>挠脚心tk捆绑网站</b>
+        </div>
+        <p class="foot-tagline">把绳结松紧、挠痒节奏和足部护理拆成可核对的条目，供检索与复盘。</p>
+      </div>
+      <div class="foot-col">
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#channels">频道索引</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>规则与答疑</h4>
+        <ul>
+          <li><a href="/#compare">场景对照</a></li>
+          <li><a href="/#faq">常见疑问</a></li>
+          <li><a href="/#rank">装备榜单</a></li>
+          <li><a href="/#timeline">社区时间线</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="sample"><b>示例数据说明：</b>页面内场景条目、评论、榜单与时间线均为编辑按公开讨论与器物常识整理的示例内容，非真实用户上传；人物昵称为虚构，日期落在2026年10月12日至11月8日之间。时长、松紧与价格数字为经验区间，不构成专业或医疗建议。页面更新项对应“最新更新”栏目11月7日条目，可逐条核对。</p>
+      <p>© 2026 场景条目录入组 · 本站为信息整理示例，不提供预约或交易服务</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.textContent = open ? '收起' : '菜单';
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 720) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+        toggle.textContent = '菜单';
+      }
+    });
+  }
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var feedback = document.getElementById('searchFeedback');
+  var index = [
+    {t:'脚踝单柱结的两指检查法', id:'deep'},
+    {t:'脚踝固定到底该多紧 深度解析', id:'deep'},
+    {t:'6mm麻绳与8mm棉绳的差别', id:'deep'},
+    {t:'足底挠痒道具清单 羽毛与软刷', id:'featured'},
+    {t:'足部护理三步收尾', id:'featured'},
+    {t:'安全词红黄绿备忘卡', id:'featured'},
+    {t:'第一次体验的六个步骤', id:'guide'},
+    {t:'挠痒与捆绑场景对照', id:'compare'},
+    {t:'脚趾缝为什么特别痒', id:'faq'},
+    {t:'笑到咳嗽要不要停', id:'faq'},
+    {t:'一个人能不能练习捆绑', id:'faq'},
+    {t:'装备榜单 新手优先级', id:'rank'},
+    {t:'社区时间线 10月以来条目变化', id:'timeline'},
+    {t:'相关资讯 版本差异', id:'news'},
+    {t:'频道索引 10个频道', id:'channels'},
+    {t:'用户评论 节选', id:'comments'}
+  ];
+
+  function doSearch(){
+    var q = (input.value || '').trim();
+    if (!q) {
+      feedback.className = 'search-feedback show';
+      feedback.innerHTML = '输入“绳结”“挠痒”“安全词”等词再查找。';
+      return;
+    }
+    var hits = index.filter(function(item){
+      return item.t.indexOf(q) !== -1;
+    });
+    if (!hits.length) {
+      feedback.className = 'search-feedback show';
+      feedback.innerHTML = '没有找到与“' + escapeHTML(q) + '”匹配的条目。<br>可以试试：脚踝单柱结、足底挠痒、安全词、足部护理。';
+      return;
+    }
+    var lis = hits.slice(0,6).map(function(h){
+      return '<li><a href="/#'+h.id+'">'+escapeHTML(h.t)+'</a></li>';
+    }).join('');
+    feedback.className = 'search-feedback show';
+    feedback.innerHTML = '找到 ' + hits.length + ' 条相关内容：<ul>' + lis + '</ul>';
+    feedback.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ feedback.classList.remove('show'); });
+    });
+  }
+  function escapeHTML(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  if (btn) btn.addEventListener('click', doSearch);
+  if (input) {
+    input.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+    });
+  }
+  document.addEventListener('click', function(e){
+    if (feedback && feedback.classList.contains('show')) {
+      if (!feedback.contains(e.target) && e.target !== input && e.target !== btn) {
+        feedback.classList.remove('show');
+      }
+    }
+  });
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function updateActive(){
+    var y = window.scrollY + 140;
+    var current = -1;
+    sections.forEach(function(sec, i){
+      if (sec && sec.offsetTop <= y) current = i;
+    });
+    sideLinks.forEach(function(a, i){
+      a.classList.toggle('active', i === current);
+    });
+  }
+  window.addEventListener('scroll', updateActive, {passive:true});
+  updateActive();
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 600) { toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"挠脚心tk捆绑网站",
+  "description":"整理挠脚心与轻度捆绑场景的内容导航、体验指南、安全规则与社区讨论。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"脚趾缝被羽毛扫过为什么特别痒？",
+      "acceptedAnswer":{"@type":"Answer","text":"脚趾缝皮肤薄、神经末梢密集，羽毛细丝会同时触发多处轻触感受器，痒感比脚掌更集中。体验时先用羽毛沿趾缝外侧单向扫，单侧不超过30秒。"}
+    },
+    {
+      "@type":"Question",
+      "name":"6mm麻绳和8mm棉绳，新手先买哪种？",
+      "acceptedAnswer":{"@type":"Answer","text":"麻绳更轻、收尾结更小，绕脚踝两圈后压痕窄，适合第一次练习；8mm棉绳厚度明显，容易形成宽压痕。预算允许先买6mm麻绳加一卷运动绷带。"}
+    },
+    {
+      "@type":"Question",
+      "name":"笑到咳嗽要不要立刻停？",
+      "acceptedAnswer":{"@type":"Answer","text":"要停。连续咳嗽说明呼吸节奏被打乱，应松开绳子、让脚放平，等呼吸平稳再决定是否继续，重新开始时把刺激强度降一档。"}
+    },
+    {
+      "@type":"Question",
+      "name":"一个人能不能练习捆绑和挠痒？",
+      "acceptedAnswer":{"@type":"Answer","text":"固定类动作不建议单独练习，绳结松脱时没人协助风险高。挠痒可单独做感知练习，涉及固定脚踝的部分应有人在场。"}
+    },
+    {
+      "@type":"Question",
+      "name":"安全词用几个词比较合适？",
+      "acceptedAnswer":{"@type":"Answer","text":"三个词最实用：继续、减慢、立即停止，再配两个手势应对说不出话的情况。词要短、发音清楚，提前一天对一遍。"}
+    },
+    {
+      "@type":"Question",
+      "name":"体验后脚底发红要处理吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"轻度发红通常半小时内消退，温水冲洗后擦干即可。若发红超过一小时、伴随刺痛或破皮，应停止同类动作，保持足部干燥，必要时就医。"}
+    }
+  ]
+}
+</script>
+</body>
+  </html>
